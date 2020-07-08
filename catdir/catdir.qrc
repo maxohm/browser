@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="catdir">images/catdir.png</file>
+        <file alias="no">images/no.png</file>
+    </qresource>
+</RCC>

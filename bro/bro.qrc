@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="bookmark-new">images/bookmark-new.png</file>
+        <file alias="bookmark-new-list">images/bookmark-new-list.png</file>
+        <file alias="dialog-information">images/dialog-information.png</file>
+        <file alias="dialog-question">images/dialog-question.png</file>
+        <file alias="document-close">images/document-close.png</file>
+        <file alias="drive-optical">images/drive-optical.png</file>
+        <file alias="edit-find">images/edit-find.png</file>
+        <file alias="go-down">images/go-down.png</file>
+        <file alias="go-home">images/go-home.png</file>
+        <file alias="go-next">images/go-next.png</file>
+        <file alias="go-previous">images/go-previous.png</file>
+        <file alias="go-up">images/go-up.png</file>
+        <file alias="wicon">images/wicon.png</file>
+        <file alias="logo">images/logo.png</file>
+        <file alias="no">images/no.png</file>
+        <file alias="process-stop">images/process-stop.png</file>
+		<file alias="secure-card">images/secure-card.png</file>
+        <file alias="tab-close">images/tab-close.png</file>
+        <file alias="tab-new-background">images/tab-new-background.png</file>
+        <file alias="view-calendar-journal">images/view-calendar-journal.png</file>
+        <file alias="view-fullscreen">images/view-fullscreen.png</file>
+        <file alias="view-pane-detailed">images/view-pane-tree.png</file>
+        <file alias="view-pane-tree">images/view-pane-tree.png</file>
+        <file alias="view-refresh">images/view-refresh.png</file>
+        <file alias="view-sidetree">images/view-sidetree.png</file>
+        <file alias="welcome1">images/welcome1.png</file>
+        <file alias="zoom-in">images/zoom-in.png</file>
+        <file alias="zoom-out">images/zoom-out.png</file>
+        <file alias="zoom-original">images/zoom-original.png</file>
+    </qresource>
+</RCC>

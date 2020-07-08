@@ -1,12 +1,15 @@
 #
-# Кастомный браузер и его различные компоненты
+# Кастомный многоплатформный многоцелевой браузер
+# Авторизация: user / 12345
+# В папке data могут находиться любые каталоги содержащие index.htm
 # (c) Автор и владелец -  maxohm [ at ] gmail.com
 # не допускается ни использование ни копирование без согласия автора.
-# (!) Сначала соберите libengines & catdir
 #
-# Custom crossplatform multipurpose components & browser
-# (!) Build libengines & catdir first
-
+# Customized multiplatform multipurpose browser
+# user: user
+# pass: 12345
+# Put any folders with index.htm inside data folder
+#
 (!) Автор не несет никакой ответственности за то, как вы это используете
 
 (!) Другие торговые марки, возможно упомянутые, являются товарными знаками соответствующих владельцев и используются только в справочных целях
