@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     const auto chromiumFlags = qgetenv("QTWEBENGINE_CHROMIUM_FLAGS");
 
 #ifdef QT_DEBUG
-    qInstallMessageHandler(_log::myMessageHandler);
+    //qInstallMessageHandler(_log::myMessageHandler);
     qputenv("QTWEBENGINE_CHROMIUM_FLAGS", chromiumFlags+"--flag-switches-begin --enable-logging=stderr --v --use-spdy=off --disable-http2 --disable-gl-error-limit --enable-es3-apis --enable-webgl-draft-extensions --flag-switches-end");
 #else
     //QWebEngineSettings::defaultSettings()->setAttribute(QWebEngineSettings::PluginsEnabled, true);
@@ -82,23 +82,22 @@ int main(int argc, char **argv)
     //
     QDialog dialog;
     //
-    //    QString sumf = objpath(cwd,
-    //                           objname(argv[0])+".cat");
-    //    QString ex = cfg2str(cfg,"libPath");
-    // **** ultimate file verification engine *****
-    //if(!md5chks(sumf, ex)){
-//        if(!args.contains("nc"))
-//            if(!args.contains("no_check"))
-//                if(!md5chks())
-//            {
-//                // ********************************************
-//                QMessageBox::critical(&dialog,
-//                                      app.tr("Ошибка"),
-//                                      app.tr("Нарушена целостность файлов программы")+
-//                                      app.tr("\n- программа будет закрыта."),
-//                                      QMessageBox::Close);
-//                exit(1);
-//            };
+    QString sumf = objpath(cwd,
+                           objname(argv[0])+".cat");
+    QString ex = cfg2str(cfg,"libPath");
+    //**** ultimate file verification engine *****
+    if(!args.contains("nc"))
+        if(!args.contains("no_check"))
+            if(!md5chks())
+            {
+    // ********************************************
+                QMessageBox::critical(&dialog,
+                                      app.tr("Ошибка"),
+                                      app.tr("Нарушена целостность файлов программы")+
+                                      app.tr("\n- программа будет закрыта."),
+                                      QMessageBox::Close);
+                exit(1);
+            };
     //
     _log::log("main() 4");
     // ********************************************
