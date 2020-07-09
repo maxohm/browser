@@ -10,7 +10,7 @@
 
 QIcon myIcon(QString iname)         // freedesktop unsupport workaround ...
 {
-    _log::_log::log("myIcon() " + iname);
+    _log::log("myIcon() " + iname);
     //
     QIcon icon = QIcon::fromTheme(iname);
     if (icon.isNull())
