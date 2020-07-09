@@ -2,6 +2,7 @@
 #include "ui_clist.h"
 //
 #include <QAction>
+#include <QCloseEvent>
 #include <QDebug>
 #include <QElapsedTimer>
 //
@@ -60,7 +61,7 @@ void catdir::dump(){
     _log::log("catdir::dump() "+QString::number(
                   sums.size())+" symbols");
     _log::log("sums = "+sums);
-    basefy(this->sumfile,sums);
+    utfy(this->sumfile,sums);
 }
 
 bool catdir::check(QStringList ex) // CATDir MODE 2
@@ -144,7 +145,7 @@ void catdir::edit(QStringList ex) // CATDir MODE 1
         //
         this->ui->log->removeRow(
                     this->ui->log->currentRow());
-        this->dump();
+        //this->dump();
     });
     this->addAction(this->removeAction);
     // ************************************
@@ -155,8 +156,19 @@ void catdir::edit(QStringList ex) // CATDir MODE 1
     this->setWindowIcon(
                 myIcon("catdir"));
     this->show();
-    this->dump();
+    //this->dump();
 }
+
+void catdir::closeEvent(QCloseEvent *event)
+{
+    _log::log("catdir::closeEvent");
+    //
+    this->dump();
+    //
+    event->accept();
+    QApplication::quit();
+}
+
 
 bool catdir::init(QStringList p)
 {

@@ -17,6 +17,9 @@ public:
     //
     bool init(QStringList p);
 
+protected:
+    void closeEvent(QCloseEvent* event) override;
+
 private:
     Ui::clist *ui;
     //
